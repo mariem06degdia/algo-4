@@ -1,0 +1,13 @@
+isPalindrom:FUNCTION isPalindrom(word) : BOOLEAN
+VAR
+    set_declarations
+BEGIN
+   if(length(word) <= 1) then
+   return true
+   end if 
+
+   if (word[0] = word[word.length - 1 ]) then
+   return isPalindrom(substring(word,1,length-2))
+   else
+   return false
+END
